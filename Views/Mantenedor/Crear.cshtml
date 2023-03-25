@@ -1,0 +1,33 @@
+﻿<!--Insert form-->
+@{
+    ViewData["Title"] = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br/>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Crear Contacto</h4>
+    </div>
+    <div class="panel-body">
+        <form action="@Url.Action("Crear","Mantenedor")" method="post">
+            <div class="form-control">
+                  <label>Nombre</label>
+                  <input type="text" class="form-control" name="Nombre"/>
+            </div>
+            <div class="form-control">
+                  <label>Correo</label>
+                  <input type="text" class="form-control" name="Correo"/>
+            </div>
+            <div class="form-control">
+                  <label>Telefono</label>
+                  <input type="text" class="form-control" name="Telefono"/>
+            </div>
+            <hr/>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            <a class="btn btn-danger" href="@Url.Action("Inicio","Mantenedor")">Volver</a>
+            <a></a>
+        </form>
+
+    </div>
+</div>
+
